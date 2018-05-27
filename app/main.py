@@ -32,6 +32,7 @@ def main():
             print('Curiosidade:', question['Curiosity'])
             blank_line()
     
+    print(username, end=' ')
     suggestion(level, points)
 
 if __name__ == '__main__':

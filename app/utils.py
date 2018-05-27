@@ -45,16 +45,20 @@ def blank_line():
 def suggestion(level, points):
     if level == 'fácil':
         if points > 4:
-            print('Você obteve %i pontos. Parabéns, sua pontuação foi exelente! Que tal tentar jogar novamente na dificuldade médio?' %(points))
+            print('você obteve %i pontos. Parabéns, sua pontuação foi exelente! Que tal tentar jogar novamente na dificuldade médio?' %(points))
         else:
-            print('Você obteve %i pontos. Continue praticando.' %(points))
+            print('você obteve %i pontos. Continue praticando.' %(points))
     elif level == 'médio':
         if points > 4:
-            print('Você obteve %i pontos. Parabéns sua pontuação foi excelente! Que tal tentar novamente na dificuldade difícil?' %(points))
+            print('você obteve %i pontos. Parabéns sua pontuação foi excelente! Que tal tentar novamente na dificuldade difícil?' %(points))
+        elif points < 3:
+            print('você obteve %i pontos. Ops parece que você não teve um bom desempenho. Que tal tentar novamente na difícildade fácil?' %(points))
         else:
-            print('Você obteve %i pontos. Continue praticando, em breve você acertará todas as questões.' %(points))
+            print('você obteve %i pontos. Continue praticando, em breve você acertará todas as questões.' %(points))
     else:
         if points > 4:
-            print('Você obteve %i pontos. Parabéns sua pontuação foi incrível e você venceu o jogo na maior dificuldade!' %(points))
+            print('você obteve %i pontos. Parabéns sua pontuação foi incrível e você venceu o jogo na maior dificuldade!' %(points))
+        elif points < 3:
+            print('você obteve %i pontos. Ops parece que você não teve um bom desempenho. Que tal tentar novamente na difícildade médio?' %(points))    
         else:
-            print('Você obteve %i pontos. Você está no caminho certo, continue praticando.' %(points))
+            print('você obteve %i pontos. Você está no caminho certo, continue praticando.' %(points))

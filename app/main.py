@@ -26,7 +26,7 @@ def main():
                 print('Resposta correta!')
                 points = count_score(points)
             else:
-                print('Resposta errada. A respota correta é %s' %(question['Answer']))
+                print('Resposta errada. A resposta correta é %s' %(question['Answer']))
         
             sleep(2)
             print('Curiosidade:', question['Curiosity'])

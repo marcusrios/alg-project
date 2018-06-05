@@ -5,6 +5,8 @@ from random import shuffle
 # ask_user_name() ask for the user name and return this
 def ask_user_name():
     user_name = input('Qual é seu nome? ')
+    while user_name.isalpha() != True:
+        user_name = input('Nome inválido! Qual seu nome? ')
 
     return user_name
 
